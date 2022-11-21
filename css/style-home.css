@@ -148,7 +148,9 @@ a {
     display: flex;
     margin-top: 42px;
 }
-
+#service{
+    flex-grow: 0.9;
+}
 #menu ul li {
     list-style-type: none;
     padding-top: 10px;
