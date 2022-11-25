@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Abhaya Libre';
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Banner {
+    width: 100%;
+    height: 600px;
+    margin-top: 300px;
+    background-color: #FCF2F2;
+}
+.Banner p:first-child{
+    position: absolute;
+    left: 800px;
+    font-size: 50px;
+    color: white;
+    z-index: 1;
+}
+
+.Banner p:last-child{
+    position: absolute;
+    width: 897px;
+    height: 198px;
+    margin-left: 500px;
+    margin-top: 300px;
+    font-size: 30px;
+}
+.Banner img {
+    position: absolute;
+    width: 500px;
+    height: 988px;
+    margin-left: 700px;
+    margin-top: -480px;
+
+    background: url(0542cf327e5abe8fdb6fa9766b44e893.jpg);
+    transform: rotate(90.3deg);
+    z-index: 0;
+}
