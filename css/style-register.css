@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Abhaya Libre";
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form-register{
+    width: 500px;
+    height: 600px;
+    text-align: center;
+    background-color: #FCF2F2;
+    border-radius: 5px;
+}
+
+.form-register p:first-child{
+    margin-top: 10px;
+    font-size: 50px;
+    font-family: "Parisienne";
+}
+
+
+.form-register input{
+    border: 0;
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.form-register #firstname,#lastname{
+    width: 150px
+}
+
+.form-register a{
+    margin-top: 5px;
+    margin-left: 135px;
+    color: #000;
+    text-decoration: none;
+}
+
+.form-register button{
+    border: 0;
+    width: 200px;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 25px;
+    background-color: #FF9494;
+}
+
+.form-register button:hover{
+    background-color: #f2aeae;
+    border: 2px solid white;
+}
+
+.form-register p:nth-of-type(2){
+    margin-top: 25px;
+    margin-right: 120px;
+    color: black;
+}
+
+.form-register .icon{
+    margin-top: 15px;
+}
+
+.form-register .icon a{
+    margin: 25px;
+    width: 30px;
+    font-size: 30px;
+}
+
+.form-register p:nth-of-type(3){
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.form-register p:last-child{
+    margin-top: 40px;
+    font-size: 15px;
+    color: rgb(165, 164, 164);
+}
