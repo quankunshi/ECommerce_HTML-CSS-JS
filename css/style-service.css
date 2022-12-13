@@ -26,7 +26,7 @@ body{
 .Banner-gift p:first-child{
     position: absolute;
     margin-top: -30px;
-    left: 800px;
+    left: 600px;
     font-size: 50px;
     color: white;
     z-index: 1;
@@ -37,7 +37,7 @@ body{
     text-align: center;
     width: 897px;
     height: 198px;
-    margin-left: 500px;
+    margin-left: 300px;
     margin-top: 300px;
     font-size: 30px;
 }
@@ -45,7 +45,7 @@ body{
     position: absolute;
     width: 500px;
     height: 988px;
-    margin-left: 700px;
+    margin-left: 500px;
     margin-top: -480px;
 
     transform: rotate(90.3deg);
