@@ -1,0 +1,352 @@
+body {
+    font-family: 'Parisienne';
+
+}
+
+/* Header */
+.header {
+    display: flex;
+    height: 50px;
+
+}
+
+.logo {
+    padding-left: 600px;
+    flex-grow: 1;
+    font-size: 20px;
+}
+
+.container-2 {
+    width: 300px;
+    padding-top: 15px;
+    white-space: nowrap;
+    position: relative;
+    flex-direction: column-reverse;
+    flex-grow: 1;
+    padding-left: 200px;
+}
+
+.container-2 input#search {
+    width: 50px;
+    height: 50px;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: gray;
+    margin-top: 5px;
+    padding-left: 35px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #fff;
+    -webkit-transition: width .55s ease;
+    -moz-transition: width .55s ease;
+    -ms-transition: width .55s ease;
+    -o-transition: width .55s ease;
+    transition: width .55s ease;
+}
+
+.container-2 input#search::-webkit-input-placeholder {
+    color: #65737e;
+}
+
+.container-2 input#search:-moz-placeholder {
+    /* Firefox 18- */
+    color: #65737e;
+}
+
+.container-2 input#search::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #65737e;
+}
+
+.container-2 input#search:-ms-input-placeholder {
+    color: #65737e;
+}
+
+.container-2 .icon {
+    position: absolute;
+    top: 25%;
+    margin-left: 10px;
+    margin-top: 25px;
+    z-index: 1;
+    color: #93a2ad;
+}
+
+.container-2 input#search:focus,
+.container-2 input#search:active {
+    outline: none;
+    width: 150px;
+}
+
+.container-2:hover input#search {
+    width: 150px;
+}
+
+.container-2:hover .icon {
+    color: #4f5b66;
+}
+
+.shoppingbag {
+    padding-top: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.shoppingbag .icon {
+    color: #93a2ad;
+    font-size: 25px;
+}
+
+.shoppingbag:hover .icon {
+    color: #4f5b66;
+
+}
+
+#log {
+    margin: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    padding-top: 3px;
+    font-size: 13px;
+}
+
+#log ul {
+    display: flex;
+}
+
+#log ul li {
+    list-style-type: none;
+}
+
+#log ul li a {
+    list-style-type: none;
+    color: #787d83;
+}
+
+
+#log ul li a:hover {
+    color: black;
+}
+
+/* Menu */
+#menu {
+    width: 100%;
+    height: 50px;
+    background-color: #FFD9D9;
+    font-family: "Abhaya Libre";
+
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+#menu ul {
+    display: flex;
+    margin-top: 42px;
+}
+
+#service {
+    flex-grow: 0.9;
+}
+
+#menu ul li {
+    list-style-type: none;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+#menu ul li a:link {
+
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+}
+
+#menu ul li a:visited {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#menu ul li a:hover {
+    color: #FFF;
+}
+
+
+/* Product details select */
+.product img {
+    margin-left: 250px;
+    margin-top: 10px;
+    height: 300px;
+    width: 300px;
+    border-radius: 30px;
+}
+
+#product-name {
+    font-size: 35px;
+    padding-top: 10px;
+}
+
+#details {
+    padding-left: 700px;
+    font-family: "Abhaya Libre";
+    font-size: 22px;
+}
+
+#selectsize {
+    width: 185px;
+    margin-left: 49px;
+    height: 30px;
+}
+
+#selecttype {
+    width: 185px;
+    margin-left: 40px;
+    height: 30px;
+}
+
+#buttonAmount {
+    height: 25px;
+    width: 25px;
+    margin-left: 10px;
+    background-color: #FF9494;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+#demoInput {
+    width: 100px;
+    margin-left: 10px;
+    height: 20px;
+}
+
+#Buy,
+#AddtoCart {
+    background-color: #FF9494;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 120px;
+    margin-top: 30px;
+    margin-right: 33px;
+    font-size: 18px;
+    font-family: "Abhaya Libre";
+    color: white;
+}
+
+.describe {
+    background-color: #FFD9D9;
+    margin-top: 50px;
+    height: 220px;
+}
+
+.describe h2 {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.describe p {
+    font-family: "Abhaya Libre";
+    margin-top: -20px;
+    margin-left: 20px;
+    background-color: white;
+    height: 120px;
+    width: 1240px;
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-left: 50px;
+    font-size: 20px;
+}
+
+/* Product Review */
+.review{
+    background-color: rgb(228, 145, 145);
+    height: 500px;
+    margin-top: -25px;
+    border: none;
+}
+
+.review h2{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 10px;
+}
+
+#avatar{
+    margin-top: 5px;
+    margin-left: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+}
+.review p{
+    margin-top: -20px;
+    padding-left: 80px;
+}
+#nameacount{
+    margin-bottom: 50px;
+}
+.review textarea{
+    border-radius: 10px;
+    border: 1px solid black;
+    padding-top: 3px;
+    padding-left: 10px;
+    font-size: 17px;
+    font-family: "Abhaya Libre";
+}
+#send{
+    background-color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    position: absolute;
+    border-radius: 10px;
+    height: 28px;
+    width: 70px;
+    margin-left: 10px;
+    border: 1px solid black;
+}
+#customercomment{
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-left: 20px;
+    width: 1250px;
+    height: 280px;
+    border-radius: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#customercomment1{
+    position: absolute;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: -120px;
+    margin-top: -250px;
+    line-height: 35px;
+}
+
+.maybelike {
+    padding-left: 10px;
+    position: absolute;
+}
+.maybelike h2{
+    padding-left: 20px;
+}
+ul {
+    display: flex;
+    list-style: none;
+}
+
+ul li img {
+    height: 100px;
+    width: 100px;
+    margin-right: 80px;
+    border-radius: 20px;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONT -->
+    <link href='https://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet'>
+    <link href="https://fonts.cdnfonts.com/css/papyrus" rel="stylesheet">
+    <!-- LINK -->
+    <link rel="stylesheet" href="/css/product-details.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/css/base.css">
+    <script src="/js/app.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <title>Home-Sourvenir</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div class="header">
+        <div class="logo">
+            <h1>Sourvenir</h1>
+        </div>
+        <div class="container-2">
+            <span class="icon"><i class="fas fa-search fa-lg"></i></span>
+            <input type="search" id="search" placeholder="Search..." />
+        </div>
+        <div class="shoppingbag">
+            <a href="" class="icon"><i class="fas fa-shopping-bag"></i></a>
+        </div>
+        <div id="log">
+            <ul>
+                <li><a href="#">Login</a></li>
+                &emsp;&emsp;
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- MENU -->
+    <div id="menu">
+        <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./product-1.html">Product</a></li>
+            <li id="service"><a href="./service.html">Service</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <!-- Product details -->
+    <div class="product">
+        <img src="/images/category-card.jpg" alt="" align="left">
+        <div id="details">
+            <h1 id="product-name">Handwritten Envelopes</h1>
+            <p>Size:
+                <select name="" id="selectsize">
+                </select>
+            </p>
+            <p>Type:
+                <select name="" id="selecttype"></select>
+            </p>
+            <p>Amount:
+                <button id="buttonAmount" onclick="decrement()">-</button>
+                <input id=demoInput type=number min=0 max=110>
+                <button id="buttonAmount" onclick="increment()">+</button>
+            </p>
+            <button id="Buy">
+                Buy Now
+            </button>
+            <button id="AddtoCart">
+                Add to Cart <i class="fas fa-shopping-bag"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Describe -->
+    <div class="describe">
+        <h2>Describe</h2>
+        <p>Product's name: Handwritten Envelopes <br>
+            Material: canvas paper <br>
+            Origin: Japanese <br>
+            Size: 10*20 cm </p>
+    </div>
+
+    <!-- Product review -->
+    <div class="review">
+        <h2>Product Review</h2>
+        <div class="comment">
+            <img id="avatar" src="/images/background-services-gift.jpg" alt="avatar" align="left">
+            <p>
+                <a id="nameacount" href="">Me</a><br>
+                <textarea name="text" id="comment-box" cols="80" rows="1.5" placeholder="enter a comment"></textarea>
+                <button id="send"><b>Send</b></button>
+            </p>
+        </div>
+        <br>
+        <p id="customercomment"><b>Hyaku@123:</b> Sản phẩm đẹp như mô tả, chất lượng tốt, vô cùng hợp để làm quà tặng
+            cho người yêu. Sẽ còn ủng hộ tiếp!!!</p>
+        <p id="customercomment1"></p>
+        <script src="/js/app.js"></script>
+    </div>
+
+    <!-- Slide product -->
+    <div class="maybelike">
+        <h2>Maybe you like!!!</h2>
+        <div id="img-maybelike">
+            <ul>
+                <li><a href=""><img src="/images/category-candle.jpg" alt=""></a></li>
+                <li><a href=""><img src="/images/category-card.jpg" alt=""></a></li>
+                <li><a href=""><img src="/images/category-cup.png" alt=""></a></li>
+                <li><a href=""><img src="/images/category-flower.jpg" alt=""></a></li>
+                <li><a href=""><img src="/images/category-wax.jpg" alt=""></a></li>
+                <li><a href=""><img src="/images/category-socks.png" alt=""></a></li>
+                <li><a href=""><img src="/images/category-candle1.png" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="Footer">
+        <div class="Fo-nav">
+            <h1>Sourvenir</h1>
+            <table>
+                <tr>
+                    <td><a href="./home.html">Home</a></td>
+                    <td><a href="./product-1.html">Product</a></td>
+                    <td><a href="./service.html">Service</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">About</a></td>
+                    <td><a href="#">Contact</a></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div id="Social">
+            <a href="" class="icon"><i class="fa-brands fa-facebook"></i></a>
+            <a href="" class="icon"><i class="fa-brands fa-instagram"></i></a>
+            <a href="" class="icon"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+</body>
+
+</html>
