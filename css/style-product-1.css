@@ -44,9 +44,15 @@ hr {
     flex-direction: column;
 }
 .frame-product{
-    text-align:center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
     width: 100px;
     height: 35px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    border-radius: 5px;
     background-color: #FFD9D9;
 }
 .tagname-product {
@@ -61,7 +67,9 @@ hr {
     margin-left: 1140px;
 }
 
-
+span{
+    text-align: center;
+}
 ul.product {
     display: flex;
     list-style: none;
