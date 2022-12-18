@@ -57,7 +57,7 @@ if (window.location.href == "http://127.0.0.1:5500/html/login.html") {
                     login: true,
                     userlogin: `${username}`
                 }));
-                window.location = "../html/service.html"
+                window.location = "../html/home.html"
             }
             else {
                 tmp++;
@@ -74,49 +74,81 @@ if (window.location.href == "http://127.0.0.1:5500/html/login.html") {
 
     };
 }
-// // register
-// if (window.location.href == "http://127.0.0.1:5500/html/register.html") {
-//     localStorage.setItem('account', JSON.stringify({
-//         "acc": [
-//             {
-//                 username: '',
-//                 password: '',
-//                 info: {
-//                     name: "",
-//                     email: "",
-//                     sex: "",
-//                     age: "",
-//                     address: "",
-//                     avatarurl: ""
-//                 }
+// register
+if (window.location.href == "http://127.0.0.1:5500/html/register.html") {
+    localStorage.setItem('account', JSON.stringify({
+        "acc": [
+            {
+                username: '',
+                password: '',
+                info: {
+                    name: "",
+                    email: "",
+                    sex: "",
+                    age: "",
+                    address: "",
+                    avatarurl: ""
+                }
 
-//             },
-//         ]
-//     }));
-//     var buttonxx = document.getElementById('btn_register');
-//     buttonxx.onclick = function () {
-//         var tmp = JSON.parse(localStorage.getItem('account'))
-//         const { username, password, info } = tmp.acc[0]
-//         username = document.getElementById("username").value
-//         password = document.getElementById("password").value
-//         info.name = document.getElementById("firstname").value + document.getElementById("lasttname").value
-//         info.email = document.getElementById("userEmail").value
-//         console.log(tmp.acc[0]);
-//     }
-// }
+            },
+        ]
+    }));
+    var buttonxx = document.getElementById('btn_register');
+    buttonxx.onclick = function () {
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        var name = document.getElementById("firstname").value + document.getElementById("lastname").value;
+        var email = document.getElementById("userEmail").value;
+        localStorage.setItem('account', JSON.stringify({
+            "acc": [
+                {
+                    username: `${username}`,
+                    password: `${password}`,
+                    info: {
+                        name: `${name}`,
+                        email: `${email}`,
+                        sex: "",
+                        age: "",
+                        address: "",
+                        avatarurl: ""
+                    }
+
+                },
+            ]
+        }));
+        localStorage.setItem('action', JSON.stringify({
+            login: true,
+            userlogin: `${username}`
+        }));
+        var account = JSON.parse(localStorage.getItem("account"))
+        window.location = "../html/home.html"
+        console.log(account.acc[0]);
+    }
+}
 // avatar change when login
 var tmp = JSON.parse(localStorage.getItem('action'))
 console.log(tmp);
 const { login, userlogin } = tmp;
-
-if (login == true) {
-    var avatar = document.getElementById("log").innerHTML =
-        `
-<div class="avatar">
-    <!-- Avatar image -->
-    <p  id ="btn_avatar"><img class="avatar__image" src="/images/avatar/${userlogin}avatar.jpg"/><p>
-</div>
-`
+for (var i = 0; i < customer.length; i++) {
+    if (userlogin == customer[i].username) {
+        var avatar = document.getElementById("log").innerHTML =
+            `
+            <div class="avatar">
+            <!-- Avatar image -->
+            <p  id ="btn_avatar"><img class="avatar__image" src="/images/avatar/${userlogin}avatar.jpg"/><p>
+            </div>
+              `
+            break;
+        }
+    else{
+        var avatar = document.getElementById("log").innerHTML =
+            `
+            <div class="avatar">
+            <!-- Avatar image -->
+            <p  id ="btn_avatar"><img class="avatar__image" src="/images/avatar/usernon.png"/><p>
+            </div>
+              `
+    }
 }
 
 
