@@ -37,6 +37,7 @@ hr {
     border: 1px solid rgb(138, 137, 137, 0.5);
     width: 90%;
     margin: auto;
+    margin-top: 15px;
 }
 #product-list{
     height: 1200px;
@@ -87,4 +88,7 @@ ul.product li img {
 #space{
     border: 1px solid white;
     margin-bottom: -200px;
+}
+h2{
+    margin: 20px;
 }
