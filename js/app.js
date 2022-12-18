@@ -6,8 +6,10 @@ var customer = [
             name: "Vân Thiên",
             sex: "male",
             age: 18,
-            address: "đoán xem"
+            address: "đoán xem",
+            avatarurl: "images/avatar/vanthienavatar.jpg"
         }
+
     },
     {
         username: 'nhaty',
@@ -16,7 +18,8 @@ var customer = [
             name: "Nhất Ý",
             sex: "male",
             age: 25,
-            address: "hỏi làm gì"
+            address: "hỏi làm gì",
+            avatarurl: "images/avatar/vanthienavatar.jpg"
         }
     },
     {
@@ -26,40 +29,68 @@ var customer = [
             name: "Hải Như",
             sex: "female",
             age: 15,
-            address: "không cho biết đâu"
+            address: "không cho biết đâu",
+            avatarurl: "images/avatar/vanthienavatar.jpg"
         }
     },
 ]
+// login page
+if (window.location.href == "http://127.0.0.1:5500/html/login.html") {
+    var button = document.getElementById('btn_login');
 
-var action = {
-    login: 0,
-    userlogin: ""
+    button.onclick = function () {
+        var username = document.getElementById("user").value;
+        var password = document.getElementById("password").value;
+        let tmp = 0;
+        for (var i = 0; i < customer.length; i++) {
+            if (username == customer[i].username && password == customer[i].password) {
+                tmp = 0;
+                localStorage.setItem('action', JSON.stringify({
+                    login: true,
+                    userlogin: `${username}`
+                }));
+                window.location = "../html/service.html"
+            }
+            else {
+                tmp++;
+                localStorage.setItem('action', JSON.stringify({
+                    login: false,
+                    userlogin: ""
+                }));
+            }
+        }
+        if (tmp != 0) {
+
+            document.getElementById("error").innerHTML = "Username or password is incorrect";
+        }
+
+    };
 }
 
-var button = document.getElementById('btn_login');
-button.onclick = function () {
-    var username = document.getElementById("user").value;
-    var password = document.getElementById("password").value;
-    let tmp = 0;
-    for (var i = 0; i < customer.length; i++) {
-        if (username == customer[i].username && password == customer[i].password) {
-            tmp = 0;
-            window.location = "../html/service.html"
-        }
-        else {
-            tmp++;
-        }
-    }
-    if (tmp != 0) {
-        document.getElementById("error").innerHTML = "Username or password is incorrect";
-    }
-       
-};
+// avatar change when login
+var tmp = JSON.parse(localStorage.getItem('action'))
+console.log(tmp);
+const { login, userlogin } = tmp;
 
-// function myFunction(login) {
-//     if(login != 0){
-//         var ava = document.getElementById("ava").innerHTML ="hello"
-//         return ava;
-//     }
-// }
-// window.myFunction(action.login); 
+var avatar = document.getElementById("log").innerHTML =
+    `
+<div class="avatar">
+    <!-- Avatar image -->
+    <button id="btn_avatar"><img class="avatar__image" src="/images/avatar/${userlogin}avatar.jpg"/></button>
+</div>
+`
+
+// menu login/loguot
+var menu_check = document.getElementById('btn_avatar');
+menu_check.onclick = function () {
+    console.log(1);
+    document.getElementById("menu_icon").innerHTML =
+        `
+        <div id="menu_icon">
+    <a href="http://">settings and security</a> <br>
+    <a href="http://">login</a> <br>
+    <a href="http://">logout</a>
+    </div>
+    `
+
+}
