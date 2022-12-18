@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Abhaya Libre';
 }
 
-body{
+body {
     width: 100%;
     height: 100vh;
 }
@@ -14,8 +14,6 @@ a {
     color: black;
     font-size: 20px;
 }
-
-
 
 /* Menu */
 #menu {
@@ -85,7 +83,7 @@ a {
     font-size: 22px;
 }
 
-#details p{
+#details p {
     padding-bottom: 20px;
 }
 
@@ -158,35 +156,38 @@ a {
 }
 
 /* Product Review */
-.review{
+.review {
     background-color: #FFD9D9;
     height: 65%;
     border: none;
     margin-top: 0.5%;
 }
 
-.review h2{
+.review h2 {
     text-align: center;
     font-size: 30px;
     padding-top: 10px;
 }
 
-#avatar{
+#avatar {
     margin-top: 5px;
     margin-left: 20px;
     height: 50px;
     width: 50px;
     border-radius: 10px;
 }
-.review p{
+
+.review p {
     margin-top: 10px;
     padding-left: 80px;
 }
-#nameacount{
+
+#nameacount {
     margin-bottom: 50px;
 
 }
-.review textarea{
+
+.review textarea {
     border-radius: 10px;
     border: 1px solid black;
     padding-top: 3px;
@@ -194,7 +195,8 @@ a {
     font-size: 17px;
     font-family: "Abhaya Libre";
 }
-#send{
+
+#send {
     background-color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 15px;
@@ -205,7 +207,8 @@ a {
     margin-left: 10px;
     border: 1px solid black;
 }
-#customercomment{
+
+#customercomment {
     background-color: white;
     margin-top: 10px;
     margin-left: 20px;
@@ -217,7 +220,8 @@ a {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     width: 97%;
 }
-#customercomment1{
+
+#customercomment1 {
     position: absolute;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-left: -120px;
@@ -230,10 +234,12 @@ a {
     padding-left: 10px;
     position: absolute;
 }
-.maybelike h2{
+
+.maybelike h2 {
     padding-left: 20px;
     padding-bottom: 1.5%;
 }
+
 ul {
     display: flex;
     list-style: none;
