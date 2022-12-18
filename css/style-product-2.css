@@ -9,187 +9,20 @@ body{
     height: 100vh;
 }
 
-/* HEADER
-.header {
-    display: flex;
-    height: 50px;
-
-}
-
-.logo {
-    padding-left: 600px;
-    flex-grow: 1;
-    font-size: 20px;
-}
-
-.container-2 {
-    width: 300px;
-    padding-top: 15px;
-    white-space: nowrap;
-    position: relative;
-    flex-direction: column-reverse;
-    flex-grow: 1;
-    padding-left: 200px;
-}
-
-.container-2 input#search {
-    width: 50px;
-    height: 50px;
-    border: none;
-    font-size: 10pt;
-    float: left;
-    color: gray;
-    margin-top: 5px;
-    padding-left: 35px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    color: #fff;
-    -webkit-transition: width .55s ease;
-    -moz-transition: width .55s ease;
-    -ms-transition: width .55s ease;
-    -o-transition: width .55s ease;
-    transition: width .55s ease;
-}
-
-.container-2 input#search::-webkit-input-placeholder {
-    color: #65737e;
-}
-
-.container-2 input#search:-moz-placeholder {
-    /* Firefox 18- */
-    /* color: #65737e;
-} */
-
-/* .container-2 input#search::-moz-placeholder {
-    /* Firefox 19+ */
-    /* color: #65737e;
-}
-
-.container-2 input#search:-ms-input-placeholder {
-    color: #65737e;
-}
-
-.container-2 .icon {
-    position: absolute;
-    top: 25%;
-    margin-left: 10px;
-    margin-top: 25px;
-    z-index: 1;
-    color: #93a2ad;
-}
-
-.container-2 input#search:focus,
-.container-2 input#search:active {
-    outline: none;
-    width: 150px;
-}
-
-.container-2:hover input#search {
-    width: 150px;
-}
-
-.container-2:hover .icon {
-    color: #4f5b66;
-}
-
-.shoppingbag {
-    padding-top: 30px;
-}
-
-.shoppingbag .icon {
-    color: #93a2ad;
-    font-size: 25px;
-}
-
-.shoppingbag:hover .icon {
-    color: #4f5b66;
-
-}
-
-#log {
-    margin: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bolder;
-    padding-top: 3px;
-    font-size: 13px;
-}
-
-#log ul {
-    display: flex;
-}
-
-#log ul li {
-    list-style-type: none;
-}
-
-#log ul li a {
-    list-style-type: none;
-    color: #787d83;
-}
-
-
-#log ul li a:hover {
-    color: black;
-}
-
-/* MENU */
-/* #menu {
-    width: 100%;
-    height: 50px;
-    background-color: #FFD9D9;
-    font-family: 'Parisienne';
-
-    border-radius: 10px;
-    -moz-border-radius: 10px;
-    -webkit-border-radius: 10px;
-}
-
-#menu ul {
-    display: flex;
-    margin-top: 42px;
-}
-
-#service {
-    flex-grow: 0.9;
-}
-
-#menu ul li {
-    list-style-type: none;
-    padding-top: 10px;
-    padding-left: 30px;
-}
-
-#menu ul li a:link {
-
-    font-size: 25px;
-    color: black;
-    text-decoration: none;
-}
-
-#menu ul li a:visited {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-#menu ul li a:hover {
-    color: #FFF;
-} 
-
-  */
-
 a {
     text-decoration: none;
     color: black;
     font-size: 20px;
 }
+
 /* CATEGORY */
 h2 {
     text-align: center;
     font-size: 40px;
     letter-spacing: 1px;
     padding-left: 30px;
+    padding-top: 1%;
+    padding-bottom: 4%;
 }
 
 p {
@@ -206,6 +39,7 @@ hr {
 .product-name {
     margin-left: 30px;
     text-align: center;
+    padding-bottom: 3%;
 }
 
 #all {
@@ -215,9 +49,9 @@ hr {
     margin-left: 1140px;
 }
 
-span {
+#nameproduct{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding-right: 80px;
+    padding-right: 30%;
 }
 
 ul.product {
