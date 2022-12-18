@@ -21,33 +21,39 @@
 <body>
     <!-- HEADER -->
     <div class="header">
-        <div class="logo">
-            <h1>Sourvenir</h1>
-        </div>
-        <div class="container-2">
-            <span class="icon"><i class="fas fa-search fa-lg"></i></span>
+        <div class="header-right">
+            <span class="icon"><i class="fas fa-thin fa-magnifying-glass"></i></span>
             <input type="search" id="search" placeholder="Search..." />
         </div>
-        <div class="shoppingbag">
-            <a href="" class="icon"><i class="fas fa-shopping-bag"></i></a>
+        <div class="header-logo">
+            <h1>Sourvenir</h1>
         </div>
-        <div id="log">
-            <ul>
-                <li><a href="#">Login</a></li>
-                &emsp;&emsp;
-                <li><a href="#">Logout</a></li>
-            </ul>
+        <div class="header-left">
+            <div class="shoppingbag">
+                <a href="" class="icon"><i class="fas fa-shopping-bag"></i></a>
+            </div>
+            <div id="log">
+                <a class="icon" id ="btn_avatar"><i class="fas fa-duotone fa-user"></i></a>
+            </div>
+            <div id="menu_x" ></div>
+
         </div>
     </div>
     <!-- MENU -->
-    <div id="menu">
-        <ul>
-            <li><a href="./home.html">Home</a></li>
-            <li><a href="./product-1.html">Product</a></li>
-            <li id="service"><a href="./service.html">Service</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+    <div id="Menu">
+        <div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="product-1.html">Product</a></li>
+                <li><a href="service.html">Service</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
     </div>
     <!-- Product details -->
     <div class="product">
