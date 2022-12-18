@@ -5,7 +5,7 @@
 }
 body{
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 
@@ -30,22 +30,28 @@ p {
 .hr1 {
     width: 150px;
     margin-top: 0;
+    margin-left: 45%;
 }
 
 hr {
     border: 1px solid rgb(138, 137, 137, 0.5);
     width: 90%;
-    margin-top: 300px;
+    margin: auto;
 }
-
+#product-list{
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+.frame-product{
+    text-align:center;
+    width: 100px;
+    height: 35px;
+    background-color: #FFD9D9;
+}
 .tagname-product {
-    margin-left: 30px;
-    text-align: center;
-    font-size: 25px;
-    width: 120px;
-    height: 40px;
-    background-color: rgba(255, 217, 217, 1);
-    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
 }
 
 #all {
@@ -55,9 +61,6 @@ hr {
     margin-left: 1140px;
 }
 
-span {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
 
 ul.product {
     display: flex;
