@@ -60,7 +60,7 @@
 }
 
 .avatar__image:hover {
-    border: 1px solid pink;
+    border: 1px solid f7ecde;
 }
 
 #menu_icon_1 {
@@ -69,7 +69,7 @@
     right: 10px;
     width: 200px;
     height: 300px;
-    background: #FCF2F2;
+    background: #f7ecde;
 }
 
 #menu_icon_1 a {
@@ -101,7 +101,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #FFD9D9;
+    background-color: #f7ecde;
 }
 
 #Menu ul {
@@ -129,7 +129,7 @@
     width: 100%;
     height: 250px;
     margin-top: 200px;
-    background-color: #FFD9D9;
+    background-color: #f7ecde;
 }
 
 .Fo-nav {
@@ -137,7 +137,7 @@
     height: 200px;
     display: flex;
     justify-content: space-between;
-    background-color: #FCF2F2;
+    background-color: #f7ecde;
 }
 
 .Fo-nav h1 {
