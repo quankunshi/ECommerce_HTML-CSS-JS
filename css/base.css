@@ -60,7 +60,7 @@
 }
 
 .avatar__image:hover {
-    border: 1px solid f7ecde;
+    border: 1px solid #f7ecde;
 }
 
 #menu_icon_1 {
@@ -129,7 +129,7 @@
     width: 100%;
     height: 250px;
     margin-top: 200px;
-    background-color: #FFD9D9;
+    background-color: #ffe5c3;
 }
 
 .Fo-nav {
