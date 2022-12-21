@@ -1,116 +1,147 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONT -->
     <link href='https://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet'>
     <link href="https://fonts.cdnfonts.com/css/papyrus" rel="stylesheet">
-    <link rel="stylesheet" href="cart.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <title>Cartt-Sourvenir</title>
+    <!-- LINK -->
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <title>Cart-Sourvenir</title>
 </head>
-<body >
+
+<body>
+    <!-- HEADER -->
     <div class="header">
-       <div class="logo">
-           <h1>Sourvenir</h1> 
-       </div>
-       <div class="container-2">
-           <span class="icon"><i class="fas fa-search fa-lg"></i></span>
-           <input type="search" id="search" placeholder="Search..." />
-       </div>
-       <div class="shoppingbag">
-           <a href="" class="icon"><i class="fas fa-shopping-bag"></i></a>
-       </div>
-   </div>
-   <div id="menu">
-       <ul>
-           <li><a href="#">Home</a></li>
-           <li><a href="#">Product</a></li>
-           <li id="service"><a href="#">Service</a></li>
-           <li><a href="#">About</a></li>
-           <li><a href="#">Contact</a></li>
-       </ul>
-   </div>
-   <div>
-        <h1 id="text">Cart<img src="scart.png" id="ict"></h1>
-        <table class="shoptable">
-            <tr>
-                <th id="category">Products</th>
-                <th>Amount</th>
-                <th>Price</th>
-                <th>Subtotal</th>
-            </tr>
-            <tr>
-                <td id="category">
-                    <img src="category-socks.png"><br>
-                    productname
-                </td>
-                 <td>
-                    <button id="buttonAmount" onclick="decrement()">-</button>
-                    <input id=demoInput type=number min=0 max=110>
-                    <button id="buttonAmount" onclick="increment()">+</button>
-                 </td>
-                <td>100.000đ</td>
-                 <td>100.000đ</td>
-            </tr>
-            <tr>
-                <td id="category">
-                    <img src="category-wax.jpg"><br>
-                    productname
-                </td>
-                 <td>
-                    <button id="buttonAmount" onclick="decrement()">-</button>
-                    <input id="demoInput" type=number min=0 max=110>
-                    <button id="buttonAmount" onclick="increment()">+</button> 
-                 </td>
-                <td>75.000đ</td>
-                 <td>150.000đ</td>
-            </tr>
-        </table>
-        <div class="payment">
-            <a id="discount">Discount</a>
-            <select name="discount voucher" id="voucher">
-                <option value="first">open celebration voucher</option>
-                <option value="second">5% voucher</option>
-                <option value="third">10% voucher</option>
-                <option value="fourth">15% voucher</option>
-            </select>
-            <a id="percent">25%</a>
+        <div class="header-right">
+            <span class="icon"><i class="fas fa-thin fa-magnifying-glass"></i></span>
+            <input type="search" id="search" placeholder="Search..." />
         </div>
-        <div class="total">
-            <a id="tcost">TOTAL</a>
-            <a id="tprice">62.500đ</a>
+        <div class="header-logo">
+            <h1>Sourvenir</h1>
         </div>
-   </div>
-   <hr style="width:50%;text-align:center;">
-   <div class="maybe">
-        <h1 id="text"> Maybe you like</h1>
-        <div id="pic">
-            <img src="category-flower.jpg" alt="">
-            <img src="category-candle.jpg" alt="">
-            <img src="category-card.jpg" alt=""><br>
-            <img src="category-wax.jpg" alt="">
-            <img src="category-candle1.png" alt="">
-            <img src="category-cup.png" alt="">
+        <div class="header-left">
+            <div class="shoppingbag">
+                <a href="./cart.html" class="icon"><i class="fas fa-shopping-bag"></i></a>
+            </div>
+            <div id="log">
+                <a class="icon" id="btn_avatar"><i class="fas fa-duotone fa-user"></i></a>
+            </div>
+            <div id="menu_x"></div>
+
         </div>
-   </div>
-   <div class="footer">
-    <h1>Sourvenir</h1>
-    <table>
+    </div>
+    <!-- MENU -->
+    <div id="Menu">
+        <div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="product-1.html">Product</a></li>
+                <li><a href="service.html">Service</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- CART -->
+    <h1 id="text">Cart<img src="/images/scart.png" id="ict"></h1>
+    <table class="shoptable">
         <tr>
-            <td>Home</td>
-            <td>Product</td>
-            <td>Service</td>
+            <th id="category">Products</th>
+            <th>Amount</th>
+            <th>Price</th>
+            <th>Subtotal</th>
         </tr>
         <tr>
-            <td>About</td>
-            <td>Contact</td>
-            <td></td>
+            <td id="category">
+                <img src="/images/category-socks.png"><br>
+                Tất Noel
+            </td>
+            <td>
+                <button id="buttonAmount" onclick="decrement()">-</button>
+                <input id=demoInput type=number min=0 max=110>
+                <button id="buttonAmount" onclick="increment()">+</button>
+            </td>
+            <td>100.000đ</td>
+            <td>100.000đ</td>
+        </tr>
+        <tr>
+            <td id="category">
+                <img src="/images/category-wax.jpg"><br>
+                Móc khóa thơm
+            </td>
+            <td>
+                <button id="buttonAmount" onclick="decrement()">-</button>
+                <input id="demoInput" type=number min=0 max=110>
+                <button id="buttonAmount" onclick="increment()">+</button>
+            </td>
+            <td>75.000đ</td>
+            <td>150.000đ</td>
         </tr>
     </table>
-    <div id="img">
-        <a href=""><img src="image/Twitter.png" alt=""></a>
-        <a href=""><img src="image/Instagram.png" alt=""></a>
-        <a href=""><img src="image/Facebook.png" alt=""></a>
+    <div class="payment">
+        <a id="discount">Discount</a>
+        <select name="discount voucher" id="voucher">
+            <option value="first">open celebration voucher</option>
+            <option value="second">5% voucher</option>
+            <option value="third">10% voucher</option>
+            <option value="fourth">15% voucher</option>
+        </select>
+        <a id="percent">25%</a>
+    </div>
+    <div class="total">
+        <a id="tcost">TOTAL</a>
+        <a id="tprice">62.500đ</a>
+    </div>
+    </div>
+    <hr style="width:50%;">
+    <div class="maybe">
+        <h1 id="text"> Maybe you like</h1><br>
+        <div id="pic">
+            <a href="./product-details-flower.html"><img src="/images/category-flower.jpg" alt=""></a>
+            <a href="./product-details-candle.html"><img src="/images/category-candle.jpg" alt=""></a>
+            <a href="./product-details-envelope.html"><img src="/images/category-card.jpg" alt=""><br></a>
+            <a href="./product-details-socks.html"><img src="/images/category-wax.jpg" alt=""></a>
+            <a href="./product-details-candle.html"><img src="/images/category-candle1.png" alt=""></a>
+            <a href="./product-details-delft.html"><img src="/images/category-cup.png" alt=""></a>
+        </div>
+    </div>
+
+   <!-- FOOTER -->
+   <div class="Footer">
+    <div class="Fo-nav">
+        <h1>Sourvenir</h1>
+        <table>
+            <tr>
+                <td><a href="./home.html">Home</a></td>
+                <td><a href="./product-1.html">Product</a></td>
+                <td><a href="./service.html">Service</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">About</a></td>
+                <td><a href="./contact.html">Contact</a></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <div id="Social">
+        <a href="" class="icon"><i class="fa-brands fa-facebook"></i></a>
+        <a href="" class="icon"><i class="fa-brands fa-instagram"></i></a>
+        <a href="" class="icon"><i class="fa-brands fa-twitter"></i></a>
+    </div>
+</div>
+<script src="/js/app.js"></script>
 </body>
+
 </html>
