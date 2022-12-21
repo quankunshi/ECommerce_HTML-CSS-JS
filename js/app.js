@@ -185,7 +185,7 @@ mouseleave.onmouseleave = function () {
     `
 }
 
-// Product-details page of Amounnt
+// Product-details page of Product Amounnt
 function increment() {
     document.getElementById('demoInput').stepUp();
 }
