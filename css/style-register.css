@@ -17,7 +17,7 @@ body{
     width: 500px;
     height: 600px;
     text-align: center;
-    background-color: #FCF2F2;
+    background-color: #fae1c0;
     border-radius: 5px;
 }
 
@@ -53,11 +53,11 @@ body{
     height: 40px;
     margin-top: 10px;
     font-size: 25px;
-    background-color: #FF9494;
+    background-color: #ffd092;
 }
 
 .form-register button:hover{
-    background-color: #f2aeae;
+    background-color: #f7b45c;
     border: 2px solid white;
 }
 

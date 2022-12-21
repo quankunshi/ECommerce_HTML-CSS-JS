@@ -1,75 +1,115 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONT -->
     <link href='https://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet'>
     <link href="https://fonts.cdnfonts.com/css/papyrus" rel="stylesheet">
+    <!-- LINK -->
+    <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/contact.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <script>
         function Noti() {
-          alert("Bạn đã gửi thành công! Xin cảm ơn!");
+            var Name = document.getElementById('name').value;
+            var Mail = document.getElementById('email').value;
+            var Mess = document.getElementById('message').value;
+            if (Name == '' || Mail == '' || Mess == '')
+                confirm("Vui lòng nhập đủ thông tin!");
+            else
+                alert("Bạn đã gửi thành công! Xin cảm ơn!");
         }
-        </script>
+    </script>
     <title>Contact-Sourvenir</title>
 </head>
-<body >
- <div class="header">
-    <div class="logo">
-        <h1>Sourvenir</h1>
-    </div>
-    <div class="container-2">
-        <span class="icon"><i class="fas fa-search fa-lg"></i></span>
-        <input type="search" id="search" placeholder="Search..." />
-    </div>
-    <div class="shoppingbag">
-        <a href="" class="icon"><i class="fas fa-shopping-bag"></i></a>
-    </div>
-</div>
-<div id="menu">
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Product</a></li>
-        <li id="service"><a href="#">Service</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</div>
-<div class="contact">
-    <p id="contactus">Contact us</p>
-    <p id="phone">09876543210</p>
-    <p id="address">số 7 tòa 5 đường xx, tp.Thủ Đức</p>
-    <p id="contactus">Send us a message</p>
-    <input type="text" id="name" placeholder="Name"> <br>
-    <input type="text" id="email" placeholder="Email"><br>
-    <input type="text" id="message" placeholder="Message"> <br>
-    <button onclick="Noti()" id="send">Send</button>
-</div>
 
-<div class="social">
-    <p id="socialpages">Social pages</p>
-    <p id="fbpage">/Sourvenir</p>
-    <p id="ttpage">/sourvenir_store</p>
-    <p id="inpage">/sourvenir.store</p>
-</div>
-<div class="footer">
-    <h1>Sourvenir</h1>
-    <table>
-        <tr>
-            <td>Home</td>
-            <td>Product</td>
-            <td>Service</td>
-        </tr>
-        <tr>
-            <td>About</td>
-            <td>Contact</td>
-            <td></td>
-        </tr>
-    </table>
-    <div id="img">
-        <a href=""><img src="/image/Twitter.png" alt=""></a>
-        <a href=""><img src="/image/Instagram.png" alt=""></a>
-        <a href=""><img src="/image/Facebook.png" alt=""></a>
+<body>
+    <!-- HEADER -->
+    <div class="header">
+        <div class="header-right">
+            <span class="icon"><i class="fas fa-thin fa-magnifying-glass"></i></span>
+            <input type="search" id="search" placeholder="Search..." />
+        </div>
+        <div class="header-logo">
+            <h1>Sourvenir</h1>
+        </div>
+        <div class="header-left">
+            <div class="shoppingbag">
+                <a href="./cart.html" class="icon"><i class="fas fa-shopping-bag"></i></a>
+            </div>
+            <div id="log">
+                <a class="icon" id="btn_avatar"><i class="fas fa-duotone fa-user"></i></a>
+            </div>
+            <div id="menu_x"></div>
+
+        </div>
+    </div>
+    <!-- MENU -->
+    <div id="Menu">
+        <div>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="product-1.html">Product</a></li>
+                <li><a href="service.html">Service</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+
+    <div class="contact">
+        <p id="contactus">Contact us</p><br>
+        <p id="phone">09876543210</p><br>
+        <p id="address">số 7 tòa 5 đường xx, tp.Thủ Đức</p>
+        <br><br>
+        <p id="contactus">Send us a message</p><br>
+        <input type="text" id="name" placeholder="Name"> <br>
+        <input type="email" id="email" placeholder="Email"><br>
+        <input type="text" id="message" placeholder="Message"> <br>
+        <button onclick="Noti()" id="send">Send</button>
+    </div>
+
+    <div class="social">
+        <p id="socialpages">Social pages</p><br>
+        <p id="fbpage">/Sourvenir</p><br>
+        <p id="ttpage">/Sourvenir_store</p><br>
+        <p id="inpage">/Sourvenir.store</p><br>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="Footer">
+        <div class="Fo-nav">
+            <h1>Sourvenir</h1>
+            <table>
+                <tr>
+                    <td><a href="./home.html">Home</a></td>
+                    <td><a href="./product-1.html">Product</a></td>
+                    <td><a href="./service.html">Service</a></td>
+                </tr>
+                <tr>
+                    <td><a href="#">About</a></td>
+                    <td><a href="./contact.html">Contact</a></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div id="Social">
+            <a href="" class="icon"><i class="fa-brands fa-facebook"></i></a>
+            <a href="" class="icon"><i class="fa-brands fa-instagram"></i></a>
+            <a href="" class="icon"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+    <script src="/js/app.js"></script>
 </body>
+
 </html>
