@@ -49,6 +49,10 @@ a {
     border-radius: 10px;
 }
 
+.hithere input:hover{
+    background-color: #ffb048;
+}
+
 .category{
     margin-top: 50px;
     width: 100%;
